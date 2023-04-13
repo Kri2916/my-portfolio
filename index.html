@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/nyp.png"
+              alt="Nayang Polytechnic"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Krishnaa">Krishnaa<br>Vasanthan</h1>
+
+            <p class="title">Cyber Security student</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:222913P@mymail.nyp.edu.sg" class="contact-link"
+                  >222913P@mymail.nyp.edu.sg</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+6587259500" class="contact-link">+65 8725 9500</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Singapore</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              My name is Premanand Krishnaa Vasanthan, but you can call me Krishnaa.
+              I am a year two student pursuing a Cyber Security and Digital Forensics Diploma at NYP.
+            </p>
+
+            <p>
+              Learning about this course for over a year has only made me more interested in cybersecurity.
+              Getting the opportunity to showcase my problem-solving, research, and analytical skills,
+              I could appreciate the reasonings behind the modules that were taught to me. Moreover,
+              I was introduced to many events and challenges where I could enhance my knowledge and
+              skillset for the better. As of right now, I have garnered certificates that can
+              genuinely testify to my abilities. I am always ready to embrace many experiences
+              that can elevate my abilities as a cybersecurity enthusiast.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What I do in my spare time</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/ball.png
+                "
+                    alt="football icon"
+                    width="100"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Playing football</h4>
+
+                  <p class="service-item-text">
+                    Not only do I strive to be physically active once a week, but I can
+                    also catch up with my friends.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/book.png"
+                    alt="Reading icon"
+                    width="80"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Reading</h4>
+
+                  <p class="service-item-text">
+                    Whenever I have the time, I read the news through social media apps to
+                    understand the general status of society.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </section>
+
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">St. Anthony's Primary School</h4>
+
+                <span>2012 - 2017</span>
+
+                <p class="timeline-text">
+                  Served as a prefect and graduated with an aggregate PSLE T-score of 226. This was the
+                  beginning of my exposure to technology as I was a member of the Robotics CCA.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bukit Batok Secondary School
+                </h4>
+
+                <span>2018 - 2021</span>
+
+                <p class="timeline-text">
+                  Graduated with a 'O'-level result of 8 points(raw) for my L1R4 and participated in
+                  various NCC competitions, garnering me with several badges. This was also the
+                  time frame that piqued my interest in cybersecurity.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Nanyang Polytechnic
+                </h4>
+
+                <span>2022 - Present</span>
+
+                <p class="timeline-text">
+                  Currently pursuing a Diploma in Cyber Security & Digital Forensics. I have participated
+                  in CTF(Capture-The-Flag) events organzised by the school and taken a Diploma plus programme recently.
+                </p>
+              </li>
+            </ol>
+          </section><br>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Achievements</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">PCEP – Certified Entry-Level Python Programmer</h4>
+
+                <span>16 June 2021</span>
+
+                <p class="timeline-text">
+                  Before delving into the field of cybersecurity, I decided that it is best
+                  to pick up a programming language. Python was naturally my first choice and
+                  thus, I completed the <i>PCEP – Certified Entry-Level Python Programmer</i>
+                  certificate on this day, to get a basic understanding of the essentials of Python.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">NYP Infosec SIG May CTF 2022</h4>
+
+                <span>6 - 8 May 2022</span>
+
+                <p class="timeline-text">
+                  Even though I did not win the CTF event, this eye-opening experience
+                  taught me how to be creative with my thinking and even some problem-solving
+                  skills that can be used in the future.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Google Cloud Computing Foundation (GCCF) Program</h4>
+
+                <span>18 September - 7 October 2022</span>
+
+                <p class="timeline-text">
+                  An introduction to cloud computing could not have been better than this program,
+                  even though it was my first time learning more about the cloud. By setting aside
+                  some time during my holidays, I was able to achieve a total of 6 badges varying
+                  from <i>Cloud Computing Fundamentals</i> to <i>Fundamentals for AWS Professionals</i>.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Google Data Analytics by Google on Coursera</h4>
+
+                <span>29 September 2022</span>
+
+                <p class="timeline-text">
+                  The main reason for why I started this specialization course provided by Coursera
+                  is because I wanted to get a overview about a future module that I was going to
+                  study in Year 1 Semester 2. Moreover, by doing the GCCF Program simultaneously,
+                  I also understood the value of time management as I had only the holidays to focus
+                  on external materials.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Certified Ethical Hacker (CEHv12)</h4>
+
+                <span>12 April 2023</span>
+
+                <p class="timeline-text">
+                  Alongside completing the first acadamic year in my course, I wanted to learn
+                  more about cybersecurity as I wanted to be familiar about the contents taught
+                  in year 2. Also by accquring such a certificate, I was fortunate enough to
+                  understand the <i>ins and outs</i> of my course thoroughly.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Inter school</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>GCCF Program</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Data Analytics from Coursera</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>PCEP</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>CEHv12</button>
+              </li>
+
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Inter school</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>GCCF Program</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Data Analytics from Coursera</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>PCEP</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>CEHv12</button>
+                </li>
+
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="inter school"
+              >
+                <a href="https://drive.google.com/file/d/1RT4WXW-KXUpW8mXTI2_sG7VHEWhKvc4K/view?usp=sharing" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/May CTF.png"
+                      alt="May CTF"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">NYP May CTF</h3>
+
+                  <p class="project-category">Inter school</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="pcep"
+              >
+                <a href="https://verify.openedg.org/?id=XOrx.FAz3.58tf" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/PCEP.png"
+                      alt="PCEP Certificate"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">PCEP Certificate</h3>
+
+                  <p class="project-category">PCEP</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="cehv12"
+              >
+                <a href="https://drive.google.com/file/d/1rMp1IP5jW_ahX8wI3zi-MwPHr5_VYWVX/view?usp=sharing" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/ECC-SECert.png"
+                      alt="ECC-SECert.png"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">ECC Student Evaluation Certificate</h3>
+
+                  <p class="project-category">CEHv12</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="pcep"
+              >
+                <a href="https://drive.google.com/file/d/1Lf9DSQ47Y24-XHVbpSPye2vyduC9tIsO/view?usp=sharing" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/PCEP score record.png"
+                      alt="PCEP score record"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">PCEP score record</h3>
+
+                  <p class="project-category">PCEP</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="cehv12"
+              >
+                <a href="https://drive.google.com/file/d/1b5HjFAhrn7_rhOWQa2IYbSQUQC2CEyzW/view?usp=sharing" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Exam-Transcript.png"
+                      alt="CEHv12 Exam Transcript"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">CEHv12 Exam Transcript</h3>
+
+                  <p class="project-category">CEHv12</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analytics from coursera"
+              >
+                <a href="https://coursera.org/share/3739e2d68cad4ef3e59e337acf8567e1" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Data, Data, Everywhere.png"
+                      alt="Data, Data, Everywhere"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Foundations: Data, Data, Everywhere</h3>
+
+                  <p class="project-category">Data Analytics from Coursera</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analytics from coursera"
+              >
+                <a href="https://coursera.org/share/62062aa85f3ce7cf159ec0e1eaa5bf1b" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Prepare data for exploration.png"
+                      alt="Prepare Data for Exploration"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Prepare Data for Exploration</h3>
+
+                  <p class="project-category">Data Analytics from Coursera</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="gccf program"
+              >
+                <a href="https://www.cloudskillsboost.google/public_profiles/86a710cf-4529-4a5a-be24-34945e19b4a1/badges/2676470" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Create and Manage Cloud Resources.png"
+                      alt="Create and manage cloud resources"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Create and Manage Cloud Resources</h3>
+
+                  <p class="project-category">GCCF Program</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="gccf program"
+              >
+                <a href="https://www.cloudskillsboost.google/public_profiles/86a710cf-4529-4a5a-be24-34945e19b4a1/badges/2677581" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Perform Foundational Infrastructure Tasks in Google Cloud.png"
+                      alt="Perform Foundational Infrastructure Tasks in Google Cloud"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Perform Foundational Infrastructure Tasks in Google Cloud</h3>
+
+                  <p class="project-category">GCCF Program</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analytics from coursera"
+              >
+                <a href="https://coursera.org/share/c052e29e96453cf32f66b069583f53ee" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Process data from dirty to clean.png"
+                      alt="Process data from dirty to clean"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Process data from dirty to clean</h3>
+
+                  <p class="project-category">Data Analytics from Coursera</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analytics from coursera"
+              >
+                <a href="https://coursera.org/share/5f37efc01994a4d149b088bb57c59d23" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Share Data Through the Art of Visualization.png"
+                      alt="Share Data Through the Art of Visualization"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Share Data Through the Art of Visualization</h3>
+
+                  <p class="project-category">Data Analytics from Coursera</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="gccf program"
+              >
+                <a href="https://www.cloudskillsboost.google/public_profiles/86a710cf-4529-4a5a-be24-34945e19b4a1/badges/2684309" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Google Cloud Big Data and Machine Learning Fundamentals.png"
+                      alt="Google Cloud Big Data and Machine Learning Fundamentals"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Google Cloud Big Data and Machine Learning Fundamentals</h3>
+
+                  <p class="project-category">GCCF Program</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="gccf program"
+              >
+                <a href="https://www.cloudskillsboost.google/public_profiles/86a710cf-4529-4a5a-be24-34945e19b4a1/badges/2629147" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Google Cloud Computing Foundations Cloud Computing Fundamentals.png"
+                      alt="Google Cloud Computing Foundations: Cloud Computing Fundamentals"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Google Cloud Computing Foundations: Cloud Computing Fundamentals</h3>
+
+                  <p class="project-category">GCCF Program</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analytics from coursera"
+              >
+                <a href="https://coursera.org/share/2f92dafbfb02f287de292c56c0c42c68" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Analyze Data to Answer Questions.png"
+                      alt="Analyze Data to Answer Questions"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Analyze Data to Answer Questions</h3>
+
+                  <p class="project-category">Data Analytics from Coursera</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analytics from coursera"
+              >
+                <a href="https://coursera.org/share/239e07dd5a93387fe68608bae724d262" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Ask questions to make data-driven decisions.png"
+                      alt="Ask questions to make data-driven decisions"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Ask Questions to Make Data-Driven Decisions</h3>
+
+                  <p class="project-category">Data Analytics from Coursera</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="gccf program"
+              >
+                <a href="https://www.cloudskillsboost.google/public_profiles/86a710cf-4529-4a5a-be24-34945e19b4a1/badges/2674378" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Google Cloud Fundamentals Core Infrastructure.png"
+                      alt="Google Cloud Fundamentals: Core Infrastructure"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Google Cloud Fundamentals: Core Infrastructure</h3>
+
+                  <p class="project-category">GCCF Program</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="gccf program"
+              >
+                <a href="https://www.cloudskillsboost.google/public_profiles/86a710cf-4529-4a5a-be24-34945e19b4a1/badges/2701334" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Google Cloud Fundamentals for AWS Professionals.png"
+                      alt="Google Cloud Fundamentals for AWS Professionals"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Google Cloud Fundamentals for AWS Professionals</h3>
+
+                  <p class="project-category">GCCF Program</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analytics from coursera"
+              >
+                <a href="https://coursera.org/share/1640b5ec4c348a7f672eb2284f814a7c" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Google Data Analytics.png"
+                      alt="Google Data Analytics"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Google Data Analytics</h3>
+
+                  <p class="project-category">Data Analytics from Coursera</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analytics from coursera"
+              >
+                <a href="https://coursera.org/share/0b8c9d59e9cb0ea431d693411c8ffcdb" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Complete a Case study.png"
+                      alt="Google Data Analytics Capstone: Complete a Case study"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Google Data Analytics Capstone: Complete a Case study</h3>
+
+                  <p class="project-category">Data Analytics from Coursera</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analytics from coursera"
+              >
+                <a href="https://coursera.org/share/53b894fa7d144a738406c18e577818c8" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Data Analysis with R Programming.png"
+                      alt="Data Analysis with R Programming"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Data Analysis with R Programming</h3>
+
+                  <p class="project-category">Data Analytics from Coursera</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
